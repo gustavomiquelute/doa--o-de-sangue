@@ -17,6 +17,36 @@ formulario.addEventListener('submit', function(event) {
     const partesnome = nome.trim().split(" ");
 
     if (partesnome.length < 2 || partesnome[1] === "") {
-        alert("Digite seu nome completo.")
+        alert("Digite seu nome completo.");
+        return;
     }
-})
+    
+    if (Number(idade) < 16) {
+        alert("Idade minima 16 anos.");
+        return;
+    }
+
+    if (Number(peso) < 50) {
+        alert("Peso minimo 50kg.");
+        return;
+    }
+
+    const novodoador = {
+        nome: nome,
+        email: email,
+        idade: idade,
+        peso: peso,
+        tiposanguineo: tiposanguineo,
+        telefone: telefone,
+        cidade: cidade,
+        estado: estado
+    };
+
+    listadores.push(novodoador);
+
+    console.log("doador adicionado", novodoador);
+    console.log("lista completa atualizada:", listadores);
+
+    alert("aprovado dados salvos.");
+    formulario.reset();
+});

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sucesso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header> Cadastro realizado</header>
+
+        <div id="dados-confirmacao"></div>
+
+        <button onclick="window.location.href='index.html'">Cadastrar outro</button>
+    </main>
+
+   <script>
+        var dadosSalvos = localStorage.getItem("doadorlogado");
+
+        var doador = JSON.parse(dadosSalvos);
+
+        var div = document.getElementById("dados-confirmacao");
+
+        div.innerHTML = "<h3>Confira suas informações:</h3>" +
+                        "<p><b>Nome:</b> " + doador.nome + "</p>" +
+                        "<p><b>E-mail:</b> " + doador.email + "</p>" +
+                        "<p><b>Tipo Sanguíneo:</b> " + doador.tiposanguineo + "</p>" +
+                        "<p><b>Cidade/estado:</b> " + doador.cidade + " / " + doador.estado + "</p>";
+    </script>
+    
+</body>
+</html>

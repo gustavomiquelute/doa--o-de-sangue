@@ -48,5 +48,8 @@ formulario.addEventListener('submit', function(event) {
     console.log("lista completa atualizada:", listadores);
 
     alert("aprovado dados salvos.");
+
+    localStorage.setItem("doadorlogado", JSON.stringify(novodoador));
+    window.location.href = "sucesso.html";
     formulario.reset();
 });

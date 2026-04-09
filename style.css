@@ -22,7 +22,7 @@ main {
     width: 400px;
     margin: 0 auto;
     padding: 20px;
-    border: 2px solid #b30000;
+    border: 2px solid rgba(175, 0, 0, 0.842);
     border-radius: 10px;
 }
 
@@ -31,7 +31,7 @@ label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
-    color: #333;
+    color: rgb(54, 54, 54);
 }
 
 
@@ -39,13 +39,13 @@ input, select {
  
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(92, 91, 91);
     border-radius: 4px;
     box-sizing: border-box; 
 }
 
 button {
-    background-color: #b30000;
+    background-color: rgba(177, 0, 0, 0.863);
     color: white;
     width: 100%;
     padding: 10px;

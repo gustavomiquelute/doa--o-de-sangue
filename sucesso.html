@@ -8,7 +8,6 @@
 </head>
 <body>
     <main>
-        <header> Cadastro realizado</header>
 
         <div id="dados-confirmacao"></div>
 
@@ -22,7 +21,8 @@
 
         var div = document.getElementById("dados-confirmacao");
 
-        div.innerHTML = "<h3>Confira suas informações:</h3>" +
+        div.innerHTML = "<h1>Cadastro bem sucedido</h1>"+
+                        "<h3>Confira suas informações:</h3>" +
                         "<p><b>Nome:</b> " + doador.nome + "</p>" +
                         "<p><b>E-mail:</b> " + doador.email + "</p>" +
                         "<p><b>Tipo Sanguíneo:</b> " + doador.tiposanguineo + "</p>" +

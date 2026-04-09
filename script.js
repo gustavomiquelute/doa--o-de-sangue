@@ -16,7 +16,7 @@ formulario.addEventListener('submit', function(event) {
 
     const partesnome = nome.trim().split(" ");
 
-    if (partesnome.length < 2 || partesnome[1] === "") {
+    if (partesnome.length < 2) {
         alert("Digite seu nome completo.");
         return;
     }
@@ -47,7 +47,6 @@ formulario.addEventListener('submit', function(event) {
     console.log("doador adicionado", novodoador);
     console.log("lista completa atualizada:", listadores);
 
-    alert("aprovado dados salvos.");
 
     localStorage.setItem("doadorlogado", JSON.stringify(novodoador));
     window.location.href = "sucesso.html";

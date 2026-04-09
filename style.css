@@ -41,7 +41,8 @@ input, select {
     margin-top: 5px;
     border: 1px solid rgb(92, 91, 91);
     border-radius: 4px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    width: 400px;
 }
 
 button {
